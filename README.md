@@ -46,7 +46,7 @@ O sistema executa as operações básicas de uma conta bancária: **depósito, s
     - Certifique-se de ter o Python 3+ instalado.
     - No terminal, rode:
         ```bash
-        python bancario.py
+        python banksys.py
         ```
 
 3. **Siga o menu interativo:**
