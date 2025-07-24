@@ -1,10 +1,10 @@
-# Sistema Bancário em Python
-[![Santander Bootcamp 2025](https://img.shields.io/badge/Santander%20Bootcamp%202025-DIO.me-red?style=for-the-badge)](https://www.dio.me/)
+# Sistema Bancário Simples em Python (CLI)
+[![Santander Bootcamp 2025](https://img.shields.io/badge/Santander%20Bootcamp%202025-Backend%20com%20Python-red?style=for-the-badge)](https://www.dio.me/)
 
 ## Sobre o projeto
 
-Este projeto é a versão 1 (MVP) de um sistema bancário desenvolvido em Python, como parte de um desafio prático do bootcamp de back-end.
-O sistema executa as operações básicas de uma conta bancária: **depósito, saque e extrato**, com controle de limites e histórico de transações.
+Este projeto é um sistema bancário desenvolvido em Python, como parte de um desafio prático do bootcamp de back-end.
+O sistema executa as operações básicas de uma conta bancária pré definida: **depósito, saque e extrato**, com controle de limites e histórico de transações.
 
 ---
 
@@ -20,10 +20,8 @@ O sistema executa as operações básicas de uma conta bancária: **depósito, s
 ---
 
 <h5 align="right">
-<span> Este desafio foi proposto no bootcamp Santander 2025 - Back-End com Python oferecido pela DIO.me</span>
-<a href="https://www.dio.me/">
-<img align="center" width="40px" src="https://hermes.digitalinnovation.one/assets/diome/logo-minimized.png"></a>
-</h5>
+<i><span> Este desafio foi proposto no bootcamp Santander 2025 - Back-End com Python oferecido pela DIO.me e Santander Academy</span>
+</h5></i>
 
 ---
 
@@ -31,15 +29,15 @@ O sistema executa as operações básicas de uma conta bancária: **depósito, s
 
 [![Python](https://custom-icon-badges.demolab.com/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square)](https://python.org/)
 [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/-VS%20Code-007ACC?logo=visualstudiocode&logoColor=white&style=flat-square)](https://code.visualstudio.com/)
+ - Python 3+
 
 ---
 
 ## Como Usar
-
 1. **Clone o repositório:**
     ```bash
-    git clone https://github.com/StricterBot/python-banking-cli.git
-    cd python-banking-cli
+    git clone https://github.com/StricterBot/simple-banking-system-python.git
+    cd simple-banking-system-python
     ```
 
 2. **Execute o programa:**
@@ -55,8 +53,6 @@ O sistema executa as operações básicas de uma conta bancária: **depósito, s
     - Digite `3` para visualizar o extrato.
     - Digite `4` para sair.
 
----
-
 ## Documentação e Acessibilidade
 
 - O sistema apresenta mensagens claras e separadores visuais para facilitar o entendimento do usuário.
@@ -66,19 +62,19 @@ O sistema executa as operações básicas de uma conta bancária: **depósito, s
 
 ---
 
-> [!IMPORTANT] 
-> **Por que os valores estão em R$?**  
-> O projeto foi idealizado e entregue em contexto brasileiro, seguindo o desafio original proposto no bootcamp.  
-> O uso do símbolo R$ (Real brasileiro) mantém a fidelidade ao cenário do exercício e reforça o entendimento de limites, regras e práticas locais.
-
----
-
 ## O que você vai encontrar na minha versão
 
 - **Histórico real de todas as operações, com data e hora.**
 - **Mensagens internacionais (PT/EN)**, fácil de alterar.
 - **Boas práticas de código Python**: clareza, nomes intuitivos, tratamento de erros de entrada.
 - **Experiência de usuário com feedback visual** após cada operação.
+
+---
+
+> [!IMPORTANT] 
+> **Por que os valores estão em R$?**  
+> O projeto foi idealizado e entregue em contexto brasileiro, seguindo o desafio original proposto no bootcamp.  
+> O uso do símbolo R$ (Real brasileiro) mantém a fidelidade ao cenário do exercício e reforça o entendimento de limites, regras e práticas locais.
 
 ---
 ### Sobre mim:
