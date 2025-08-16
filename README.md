@@ -14,8 +14,9 @@ O sistema executa as operações básicas de uma conta bancária pré definida: 
     - Depósito
     - Saque (máximo de 3 por dia, até R$500 cada)
     - Visualização de extrato (histórico completo)
-- **Versão 1**: Apenas um usuário. Não é necessário agência ou número de conta.
-- **Exigência**: Todas as movimentações devem ser listadas no extrato.
+- **Versão 1**: Apenas um usuário. Não é necessário agência ou número de conta. Todas as movimentações devem ser listadas no extrato.
+- **Versão 2**: Modular todas as operações em funções. Adicionar três novas operações: Cadastrar usuário, criar conta e listar usuários.
+- *Bonus*: Testes de todas as funções foram adicionados apartir da versão 2.
 
 ---
 
@@ -47,18 +48,21 @@ O sistema executa as operações básicas de uma conta bancária pré definida: 
         python banksys.py
         ```
 
-3. **Siga o menu interativo:**
+3. **Siga o menu interativo:**<br>
+    *Exemplo:*
     - Digite `1` para depositar.
     - Digite `2` para sacar.
     - Digite `3` para visualizar o extrato.
     - Digite `4` para sair.
 
-## Documentação e Acessibilidade
+## Documentação
 
+- Sistema bancário que possibilita explorar funções como depósito, saque e extrato.
 - O sistema apresenta mensagens claras e separadores visuais para facilitar o entendimento do usuário.
 - Todas as mensagens podem ser exibidas em **português ou inglês**.  
   Basta ajustar a variável `LANG` no início do código para `"PT"` ou `"EN"`.
 - As operações exibem feedback imediato, incluindo saldo atualizado após cada movimentação.
+- Utilizando a biblioteca `pytest` pode realizar testes automatizados a partir da v2.
 
 ---
 
@@ -66,6 +70,7 @@ O sistema executa as operações básicas de uma conta bancária pré definida: 
 
 - **Histórico real de todas as operações, com data e hora.**
 - **Mensagens internacionais (PT/EN)**, fácil de alterar.
+- **Testes automatizados**, testes usando `pytest`.
 - **Boas práticas de código Python**: clareza, nomes intuitivos, tratamento de erros de entrada.
 - **Experiência de usuário com feedback visual** após cada operação.
 
