@@ -8,6 +8,11 @@ O sistema executa as operações básicas de uma conta bancária pré definida: 
 
 ---
 
+## Este Projeto tem evoluções a cada versão! Confira:
+[Versão 1](https://github.com/StricterBot/simple-banking-system-python/tree/main)<br>
+[Versão 2](https://github.com/StricterBot/simple-banking-system-python/tree/v2)<br>
+[Versão 2.5](https://github.com/StricterBot/simple-banking-system-python/tree/v2.5)
+
 ## Desafio
 
 - Criar um sistema bancário com:
@@ -16,6 +21,7 @@ O sistema executa as operações básicas de uma conta bancária pré definida: 
     - Visualização de extrato (histórico completo)
 - **Versão 1**: Apenas um usuário. Não é necessário agência ou número de conta. Todas as movimentações devem ser listadas no extrato.
 - **Versão 2**: Modular todas as operações em funções. Adicionar três novas operações: Cadastrar usuário, criar conta e listar usuários.
+- **Versão 2.5**: Reescrita completa do sistema utilizando **Programação Orientada a Objetos**.
 - *Bonus*: Testes de todas as funções foram adicionados apartir da versão 2.
 
 ---
