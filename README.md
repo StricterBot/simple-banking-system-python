@@ -4,7 +4,10 @@
 ## Sobre o projeto
 
 Este projeto é um sistema bancário desenvolvido em Python, como parte de um desafio prático do bootcamp de back-end.
-O sistema executa as operações básicas de uma conta bancária pré definida: **depósito, saque e extrato**, com controle de limites e histórico de transações.
+
+O sistema, executado via terminal (CLI), evoluiu de um script procedural para uma **arquitetura robusta orientada a objetos**. 
+
+Ele simula as operações de um banco, permitindo criar clientes, associar múltiplas contas e realizar transações de **depósito e saque**, com controle de limites e histórico completo por conta.
 
 ---
 
@@ -16,7 +19,8 @@ O sistema executa as operações básicas de uma conta bancária pré definida: 
     - Visualização de extrato (histórico completo)
 - **Versão 1**: Apenas um usuário. Não é necessário agência ou número de conta. Todas as movimentações devem ser listadas no extrato.
 - **Versão 2**: Modular todas as operações em funções. Adicionar três novas operações: Cadastrar usuário, criar conta e listar usuários.
-- *Bonus*: Testes de todas as funções foram adicionados apartir da versão 2.
+- **Versão 2.5**: Reescrita completa do sistema utilizando **Programação Orientada a Objetos**. Criação de classes para todas as entidades (`Cliente`, `Conta`, `Transacao`, etc.), aplicando conceitos como **encapsulamento, herança e polimorfismo** para um código mais robusto, seguro e escalável.
+- **Testes de todas as funções foram adicionados apartir da versão 2.**
 
 ---
 
@@ -29,8 +33,8 @@ O sistema executa as operações básicas de uma conta bancária pré definida: 
 ## Tecnologias Utilizadas
 
 [![Python](https://custom-icon-badges.demolab.com/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square)](https://python.org/)
+[![Pytest](https://custom-icon-badges.demolab.com/badge/-Pytest-0A9B71?logo=pytest&logoColor=white&style=flat-square)](https://pytest.org/)
 [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/-VS%20Code-007ACC?logo=visualstudiocode&logoColor=white&style=flat-square)](https://code.visualstudio.com/)
- - Python 3+
 
 ---
 
@@ -41,37 +45,46 @@ O sistema executa as operações básicas de uma conta bancária pré definida: 
     cd simple-banking-system-python
     ```
 
-2. **Execute o programa:**
+2.  **(Opcional) Instale as dependências para teste:**
+    ```bash
+    pip install pytest
+    ```
+
+3.  **Execute o programa:**
     - Certifique-se de ter o Python 3+ instalado.
     - No terminal, rode:
         ```bash
         python banksys.py
         ```
-
-3. **Siga o menu interativo:**<br>
-    *Exemplo:*
-    - Digite `1` para depositar.
-    - Digite `2` para sacar.
-    - Digite `3` para visualizar o extrato.
-    - Digite `4` para sair.
+4.  **Siga o menu interativo:**<br>
+    O menu agora inclui a gestão de clientes e contas:
+    - Digite `1` para Depositar
+    - Digite `2` para Sacar
+    - Digite `3` para Extrato
+    - Digite `4` para Novo Cliente
+    - Digite `5` para Nova Conta
+    - Digite `6` para Listar Contas
+    - Digite `7` para Sair
 
 ## Documentação
 
 - Sistema bancário que possibilita explorar funções como depósito, saque e extrato.
 - O sistema apresenta mensagens claras e separadores visuais para facilitar o entendimento do usuário.
-- Todas as mensagens podem ser exibidas em **português ou inglês**.  
-  Basta ajustar a variável `LANG` no início do código para `"PT"` ou `"EN"`.
-- As operações exibem feedback imediato, incluindo saldo atualizado após cada movimentação.
-- Utilizando a biblioteca `pytest` pode realizar testes automatizados a partir da v2.
+- As transações de saque e depósito são encapsuladas, garantindo que todas as regras de negócio (limites, saldo, etc.) e o registro no histórico sejam sempre aplicados.
+- Suporte completo para criar múltiplos clientes e associar múltiplas contas a um mesmo cliente.
+- O sistema foi completamente refatorado para utilizar uma arquitetura Orientada a Objetos, com classes que representam as entidades do banco de forma coesa e desacoplada.
+- Utilizando `pytest`, a suíte de testes foi atualizada para validar o comportamento de cada classe e os principais cenários de uso, incluindo a interação entre múltiplas contas de um mesmo cliente
 
 ---
 
 ## O que você vai encontrar na minha versão
 
-- **Histórico real de todas as operações, com data e hora.**
-- **Mensagens internacionais (PT/EN)**, fácil de alterar.
-- **Testes automatizados**, testes usando `pytest`.
-- **Boas práticas de código Python**: clareza, nomes intuitivos, tratamento de erros de entrada.
+- **Histórico real de todas as operações, com data e hora;
+- **Proteção de dados sensíveis** da conta, como o saldo, com métodos seguros que garantem a integridade das operações;
+- **Mensagens internacionais (PT/EN)**, fácil de alterar. *(Removido temporariamente na v2.5)*;
+- **Herança e Polimorfismo**;
+- **Testes automatizados**, cobertura de testes com `pytest` que validam o comportamento de cada classe e cenários de uso complexos, como um cliente com múltiplas contas;
+- **Boas práticas de código Python**: clareza, nomes intuitivos, tratamento de erros de entrada;
 - **Experiência de usuário com feedback visual** após cada operação.
 
 ---
